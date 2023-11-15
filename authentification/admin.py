@@ -9,9 +9,9 @@ class colonnes(admin.ModelAdmin):
 admin.site.register(Utilisateur, colonnes)
 admin.site.register(medecinPatient)
 
-"""
->>> from authentification.models import Utilisateur
+
+""">>> from authentification.models import Utilisateur
 >>> tuple([field.name for field in Utilisateur._meta.get_fields()])
 ('logentry', 'patientMedecin', 'medecinPatient', 'id', 'password', 'last_login', 'is_superuser', 'username', 'first_name', 'last_name', 'email', 'is_staff', 'is_active', 'date_joined', 'role', 'groups', 'user_permissions')
-"""
 
+"""

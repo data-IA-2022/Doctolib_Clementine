@@ -13,6 +13,9 @@ class Utilisateur(AbstractUser):
                             choices=lesRoles, 
                             verbose_name='Rôle', null=True)
 
+#periodicité formulaire santé:
+    periodiciteFormulaireSante = models.IntegerField(null=True,  blank=True, default=1)
+    periodiciteFormulaireStress = models.IntegerField(null=True,  blank=True, default=5)
 
 """
 #Trop long, la flemme
