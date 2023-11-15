@@ -1,0 +1,23 @@
+{% extends 'base.html' %} {% load custom_filters %} {% block content %}
+
+<h2>Table données Formulaire santé</h2>
+<table id="example">
+  <thead>
+    <tr>
+      {% for colonne in champsFormulaireSante %}
+      <th>{{ colonne }}</th>
+      {% endfor %}
+    </tr>
+  </thead>
+  <tbody>
+    {% for data in dataFormulaireSante %}
+    <tr>
+      {% for champ in champsFormulaireSante %}
+      <td class="text-center">{{ data|get_item:champ }}</td>
+      {% endfor %}
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+{% endblock %}

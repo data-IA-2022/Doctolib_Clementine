@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Liste des Patients</h2>
+    <table>
+        <tr>
+            <th>Nom</th>
+            <th>Actions</th>
+        </tr>
+        {% for patient in patients %}
+        <tr>
+            <td>{{ patient.idPatient.username }}</td>
+            <td>
+                <a href="{% url 'update_patient' patient.idPatient.id %}">Modifier</a>
+                <form action="{% url 'delete_patient' patient.idPatient.id %}" method="post" style="display:inline;">
+                    {% csrf_token %}
+                    <button type="submit">Supprimer</button>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="{% url 'create_patient' %}">Créer un nouveau patient</a>
+
+{% endblock %}
