@@ -96,8 +96,9 @@ def alimentationMedecin():
                                         password = valeurs.motDePasse,
                                         role="medecin")
         
-if len(Utilisateur.objects.filter(role="patient")) == 0:
-    alimentationPatients()
-if len(Utilisateur.objects.filter(role="medecin")) == 0:
-    alimentationMedecin() 
+if "role" in Utilisateur._meta.fields:
+    if len(Utilisateur.objects.filter(role="patient")) == 0:
+        alimentationPatients()
+    if len(Utilisateur.objects.filter(role="medecin")) == 0:
+        alimentationMedecin() 
 
