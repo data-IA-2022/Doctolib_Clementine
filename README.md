@@ -21,6 +21,9 @@ Doctolib_Clementine est une plateforme web dynamique construite avec le framewor
 	1- Peut remplir le ou les formulaires sur la plateforme. 
 	2- Il peut voir l’historique de ses informations remplies dans un tableau possédant des filtres dynamiques.
 	
+schéma fonctionnel : 
+![Texte alternatif](Projet_DoctoLib_Django_SchemaF.png)
+
 - Authentifications :
 	1- Chaque acteur doit s’authentifier sur la plateforme. 
 	2- Le patient et le médecin reçoivent un email avec les éléments permettant de s’authentifier. 
@@ -29,11 +32,6 @@ Doctolib_Clementine est une plateforme web dynamique construite avec le framewor
 - La base de données :
 	1- SQLite, en se basant sur les informations du formulaires.
 	2- Deux formulaires sont intégré avec une périodicité choisie par le médecin.
-
-- XAnalyse de données : 
-	1- Une page permet à l’administrateur et au médecin de rechercher des corrélations faire des régressions, classifications,et du clustering et enfin de faire une analyse de série temporelle et du NLP
-	2- Des graphiques interactifs avec filtres.
-	3- Lancer des modèles en sélectionnant des données, de les sauvegarder et de vérifier leurs performances à un instant T. 
 	
 - Test unitaire : 
 	1- Effectuer des tests unitaires sur l'application sur les fonctions les plus inportantes
