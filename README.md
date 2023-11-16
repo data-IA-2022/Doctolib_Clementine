@@ -46,7 +46,7 @@ Rendu :
 	3- le fichier SQLite (le système de base de données en Django) avec des données de test ainsi que les informations de connexion au site afin que je puisse l’utiliser et le tester ;
 	4- le code de l’application
 
-## Compétence visées:
+## Compétences visées:
 
 - Concevoir une base de données analytique avec l’approche orientée requêtes en vue de la mise à disposition des données pour un traitement analytique ou d’intelligence artificielle 
 
@@ -179,4 +179,15 @@ Nous remercions chaque contributeur pour leur engagement et leur travail. Votre 
 
 ## Licence
 Ce projet est sous licence libre - voir le fichier LICENSE.md pour plus de détails.
+
+## Améliorations et nouvelles fonctionnalités pour les prochaines versions :
+- Système d'alertes permettront d’informer le médecin si des valeurs critiques ou incohérentes ont été renseignées.
+
+- Analyse de données : 
+	1- Une page permet à l’administrateur et au médecin de rechercher des corrélations faire des régressions, classifications,et du clustering et enfin de faire une analyse de série temporelle et du NLP.
+	2- Des graphiques interactifs avec filtres.
+	3- Lancer des modèles en sélectionnant des données, de les sauvegarder et de vérifier leurs performances à un instant T. 
+
+- Système d’ETL permettant de mettre les données en formes pour la Chine, les États Unis, le Brésil, l'Afrique du Sud et la France.
+
 """
